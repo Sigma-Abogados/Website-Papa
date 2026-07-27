@@ -10,4 +10,4 @@
 - `[x]` Integrar logotipo `Sigma en HD.png`, crear menú desplegable de "Equipo Legal", y enlaces a "Equipo" y "Encuéntrenos".
 - `[x]` Crear la página de ubicación con mapa oscuro (`encuentrenos.html`) y la sección de equipo con el perfil de `Gonzalo López`.
 - `[x]` Añadir botón flotante de WhatsApp y aplicar animación dramática brillante/pulsante al botón CTA del Hero.
-- `[ ]` Probar el diseño final y verificar consistencia visual.
+- `[x]` Probar el diseño final y verificar consistencia visual.
