@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encuéntrenos | Sigma Abogados</title>
+    <meta name="description"
+        content="Visite nuestras oficinas de Sigma Abogados en Boyacá, Colombia. Ubicación y mapa de contacto.">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/home.css">
+    <style>
+        .map-section {
+            padding: 120px 0 80px 0;
+            min-height: 85vh;
+            display: flex;
+            align-items: center;
+        }
+
+        .map-container {
+            display: grid;
+            grid-template-columns: 1fr 1.5fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .map-info h1 {
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .map-info p {
+            font-size: 1.1rem;
+            color: var(--color-text-body);
+            margin-bottom: 2.5rem;
+        }
+
+        .info-details {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 1.75rem;
+        }
+
+        .info-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1.25rem;
+        }
+
+        .info-item .icon {
+            color: var(--color-accent-gold);
+            font-size: 1.6rem;
+            line-height: 1;
+        }
+
+        .info-item h3 {
+            font-size: 1.15rem;
+            margin-bottom: 0.25rem;
+            color: var(--color-text-title);
+        }
+
+        .info-item p {
+            margin-bottom: 0;
+            font-size: 0.95rem;
+            color: var(--color-text-body);
+        }
+
+        @media (max-width: 992px) {
+            .map-container {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+            }
+
+            .map-section {
+                padding-top: 100px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="nav-brand">
+                <img src="assets/images/Sigma%20en%20HD.png" alt="Sigma Abogados" class="nav-logo">
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="servicios/index.html">Servicios</a></li>
+                <li class="dropdown">
+                    <span class="dropdown-trigger">Equipo Legal <span class="arrow">▼</span></span>
+                    <ul class="dropdown-menu">
+                        <li><a href="equipo/gonzalo-lopez.html">Gonzalo López</a></li>
+                    </ul>
+                </li>
+                <li><a href="equipo/index.html">Equipo</a></li>
+                <li><a href="encuentrenos.html" class="active">Encuéntrenos</a></li>
+                <li><a href="testimonios/index.html">Testimonios</a></li>
+                <li><a href="blog/index.html">Blog</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="tel:+573000000000" class="phone-link">
+                    📞 +57 (320) 303-5508
+                </a>
+                <button class="btn btn-primary" onclick="alert('Modal placeholder')">Consulta Gratuita</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Map Section -->
+    <section class="map-section">
+        <div class="container map-container">
+            <div class="map-info hidden-scroll">
+                <h1>Nuestras <span class="text-gold-gradient">Oficinas</span></h1>
+                <p>Estamos ubicados en el corazón de Duitama, listos para ofrecerle asesoría legal de primer nivel con
+                    la
+                    comodidad, confidencialidad y reserva que usted merece.</p>
+                <ul class="info-details">
+                    <li class="info-item">
+                        <span class="icon">📍</span>
+                        <div>
+                            <h3>Dirección Principal</h3>
+                            <p>Carrera 15 # 14-69, Oficina 302, Duitama, Boyacá, Colombia</p>
+                        </div>
+                    </li>
+                    <li class="info-item">
+                        <span class="icon">📞</span>
+                        <div>
+                            <h3>Teléfono de Contacto</h3>
+                            <p>+57 (320) 303-5508</p>
+                        </div>
+                    </li>
+                    <li class="info-item">
+                        <span class="icon">✉️</span>
+                        <div>
+                            <h3>Correo Electrónico</h3>
+                            <p>dr.lopezcorredor@gmail.com</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="glass-card hidden-scroll" style="padding: 1rem;">
+                <iframe src="https://maps.app.goo.gl/5woXLaxZnpLLSqAr6" width="100%" height="450"
+                    style="border:0; filter: grayscale(1) invert(0.9) contrast(1.25); border-radius: 8px; display: block;"
+                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/573203035508" class="whatsapp-float" target="_blank" rel="noopener noreferrer"
+        aria-label="Chat on WhatsApp">
+        <svg class="whatsapp-icon" viewBox="0 0 24 24">
+            <path
+                d="M12.012 2c-5.506 0-9.989 4.478-9.99 9.984a9.964 9.964 0 0 0 1.333 4.993L2 22l5.233-1.371a9.936 9.936 0 0 0 4.777 1.216h.004c5.506 0 9.989-4.478 9.99-9.984A9.979 9.979 0 0 0 12.012 2zm5.727 14.129c-.315.892-1.54 1.636-2.122 1.761-.51.109-1.177.199-3.418-.729-2.868-1.189-4.717-4.103-4.86-4.293-.143-.19-1.151-1.533-1.151-2.925 0-1.392.73-2.076.989-2.352.258-.276.564-.345.752-.345.188 0 .376.002.538.01.171.008.4.067.61.57.218.524.746 1.821.811 1.954.065.133.109.288.02.464-.089.176-.133.287-.265.442-.132.155-.278.346-.396.464-.133.132-.271.276-.118.538.153.263.682 1.124 1.46 1.816.998.889 1.838 1.163 2.1.133.262-.132.564-.538.752-.801.188-.263.376-.221.638-.124.263.097 1.666.786 1.952.928.286.142.476.212.544.331.068.118.068.685-.247 1.577z" />
+        </svg>
+    </a>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

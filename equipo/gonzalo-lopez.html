@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gonzalo López | Equipo Legal | Sigma Abogados</title>
+    <meta name="description" content="Perfil profesional de Gonzalo López, abogado especialista de la firma Sigma Abogados en Boyacá, Colombia.">
+    <link rel="stylesheet" href="../css/variables.css">
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/components.css">
+    <style>
+        .profile-section {
+            padding: 140px 0 80px 0;
+            min-height: 85vh;
+        }
+        .profile-container {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 4rem;
+            align-items: flex-start;
+        }
+        .profile-photo {
+            width: 100%;
+            border-radius: 8px;
+            border: 1px solid var(--color-glass-border);
+            aspect-ratio: 3/4;
+            background: linear-gradient(135deg, rgba(255,255,255,0.05), rgba(255,255,255,0.01));
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+            box-shadow: var(--shadow-gold-glow);
+        }
+        .profile-photo::before {
+            content: '👤';
+            font-size: 5rem;
+            opacity: 0.3;
+        }
+        .profile-content h1 {
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+        }
+        .profile-title {
+            color: var(--color-accent-gold);
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 2rem;
+            font-family: var(--font-body);
+        }
+        .profile-bio h2 {
+            font-size: 1.8rem;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            color: var(--color-text-title);
+            border-bottom: 1px solid var(--color-glass-border);
+            padding-bottom: 0.5rem;
+        }
+        .profile-bio p {
+            color: var(--color-text-body);
+            margin-bottom: 1.5rem;
+            font-size: 1.05rem;
+            line-height: 1.7;
+        }
+        .profile-bio ul {
+            list-style: none;
+            padding-left: 0;
+            margin-bottom: 2rem;
+        }
+        .profile-bio li {
+            position: relative;
+            padding-left: 1.5rem;
+            margin-bottom: 0.75rem;
+            font-size: 1.05rem;
+            color: var(--color-text-body);
+        }
+        .profile-bio li::before {
+            content: '♦';
+            color: var(--color-accent-gold);
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+        @media (max-width: 992px) {
+            .profile-container {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+            }
+            .profile-section {
+                padding-top: 100px;
+            }
+            .profile-photo {
+                max-width: 350px;
+                margin: 0 auto;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="../index.html" class="nav-brand">
+                <img src="../assets/images/Sigma%20en%20HD.png" alt="Sigma Abogados" class="nav-logo">
+            </a>
+            <ul class="nav-links">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../servicios/index.html">Servicios</a></li>
+                <li class="dropdown">
+                    <span class="dropdown-trigger">Equipo Legal <span class="arrow">▼</span></span>
+                    <ul class="dropdown-menu">
+                        <li><a href="gonzalo-lopez.html">Gonzalo López</a></li>
+                    </ul>
+                </li>
+                <li><a href="index.html">Equipo</a></li>
+                <li><a href="../encuentrenos.html">Encuéntrenos</a></li>
+                <li><a href="../testimonios/index.html">Testimonios</a></li>
+                <li><a href="../blog/index.html">Blog</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="tel:+573000000000" class="phone-link">
+                    📞 +57 (300) 000-0000
+                </a>
+                <button class="btn btn-primary" onclick="alert('Modal placeholder')">Consulta Gratuita</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Profile Section -->
+    <section class="profile-section">
+        <div class="container profile-container">
+            <div class="profile-photo hidden-scroll">
+                <!-- Custom silhouette placeholder for photoshop replacement -->
+            </div>
+            
+            <div class="profile-content hidden-scroll">
+                <h1>Gonzalo López</h1>
+                <div class="profile-title">Abogado Socio / Especialista en Sucesiones y Herencias</div>
+                
+                <div class="profile-bio">
+                    <h2>Biografía Profesional</h2>
+                    <p>El Dr. Gonzalo López colidera el departamento de Sucesiones y Derecho Familiar en Sigma Abogados. Con más de una década de litigio y estructuración jurídica en el departamento de Boyacá, su enfoque profesional combina rigor técnico, empatía y una alta capacidad resolutiva en escenarios notariales y judiciales complejos.</p>
+                    <p>Su compromiso primordial es estructurar el traspaso ordenado de patrimonios familiares para evitar conflictos futuros y garantizar la tranquilidad de los herederos.</p>
+                    
+                    <h2>Áreas de Especialidad</h2>
+                    <ul>
+                        <li>Procesos Sucesorios por Mutuo Acuerdo (Notarial) y Contenciosos (Judicial).</li>
+                        <li>Planificación del Legado y Elaboración de Testamentos.</li>
+                        <li>Resolución de Disputas de Propiedades y Particiones de Bienes en Boyacá.</li>
+                    </ul>
+                    
+                    <a href="https://wa.me/573000000000" class="btn btn-dramatic" style="margin-top: 1rem;" target="_blank" rel="noopener noreferrer">Consultar con Dr. López</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/573000000000" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+        <svg class="whatsapp-icon" viewBox="0 0 24 24">
+            <path d="M12.012 2c-5.506 0-9.989 4.478-9.99 9.984a9.964 9.964 0 0 0 1.333 4.993L2 22l5.233-1.371a9.936 9.936 0 0 0 4.777 1.216h.004c5.506 0 9.989-4.478 9.99-9.984A9.979 9.979 0 0 0 12.012 2zm5.727 14.129c-.315.892-1.54 1.636-2.122 1.761-.51.109-1.177.199-3.418-.729-2.868-1.189-4.717-4.103-4.86-4.293-.143-.19-1.151-1.533-1.151-2.925 0-1.392.73-2.076.989-2.352.258-.276.564-.345.752-.345.188 0 .376.002.538.01.171.008.4.067.61.57.218.524.746 1.821.811 1.954.065.133.109.288.02.464-.089.176-.133.287-.265.442-.132.155-.278.346-.396.464-.133.132-.271.276-.118.538.153.263.682 1.124 1.46 1.816.998.889 1.838 1.163 2.1.133.262-.132.564-.538.752-.801.188-.263.376-.221.638-.124.263.097 1.666.786 1.952.928.286.142.476.212.544.331.068.118.068.685-.247 1.577z"/>
+        </svg>
+    </a>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
